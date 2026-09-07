@@ -1,20 +1,20 @@
 # n8n
 Web Lead Spam Checker
-# 🚀 Web Lead Spam Checker (AI Automation with n8n)
+# Web Lead Spam Checker (AI Automation with n8n)
 
 This project demonstrates how **low‑code automation** combined with **AI classification** can streamline lead management, reduce manual effort, and improve productivity.  
 Built using **n8n**, **OpenAI API**, and **Google Sheets**, the workflow automatically filters spam leads and routes genuine enquiries for review.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 - **Goal**: Automate spam filtering for website leads.  
 - **Outcome**: Reduced manual validation, improved accuracy, and faster lead management.  
 - **Approach**: Integrated OpenAI’s GPT model with n8n to classify leads, then routed results into Google Sheets.
 
 ---
 
-## 🔑 Key Steps in Setup
+## Key Steps in Setup
 1. **OpenAI API key** — obtained from [platform.openai.com](https://platform.openai.com) to enable intelligent text classification.  
 2. **Google Cloud Console credentials** — created Client ID and Client Secret for secure Sheets access.  
 3. **Enable Google Drive API** — Sheets access requires Drive permissions; missing this caused initial errors.  
@@ -23,7 +23,7 @@ Built using **n8n**, **OpenAI API**, and **Google Sheets**, the workflow automat
 
 ---
 
-## ⚡ Challenges Faced
+## Challenges Faced
 - **Authentication hurdles**: Missing Drive permissions blocked Sheets access until corrected.  
 - **Strict API rules**: OAuth consent screen setup was mandatory to avoid credential rejection.  
 - **Local vs Cloud setup**: Running n8n locally required Node.js/Docker knowledge, while cloud hosting offered convenience but less control.  
@@ -31,7 +31,7 @@ Built using **n8n**, **OpenAI API**, and **Google Sheets**, the workflow automat
 
 ---
 
-## 🖥️ Extended Project Details
+## Extended Project Details
 ### Core Workflow
 - **Form Trigger**: Captures enquiries (Name, Email, Company, Project Brief).  
 - **IF Node**: Blocks empty project briefs.  
@@ -54,14 +54,14 @@ Built using **n8n**, **OpenAI API**, and **Google Sheets**, the workflow automat
 
 ---
 
-## 📊 Value Proposition
+## Value Proposition
 - **Cost‑effective automation**: Local n8n + free API credits reduce expenses.  
 - **Scalable design**: Workflow can expand to include agents that decide which Sheets tool to use.  
 - **Practical application**: Real‑world use case of filtering spam vs genuine leads, improving productivity and data quality.  
 
 ---
 
-## 📢 Research & Learnings
+## Research & Learnings
 This project highlights the **intersection of AI and low‑code automation**:
 - AI models can be embedded into workflows for real‑time decision making.  
 - Low‑code tools like n8n reduce development overhead while maintaining flexibility.  
